@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B206D67E21F8F9EA0019FA32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D67D21F8F9EA0019FA32 /* AppDelegate.m */; };
+		B206D68121F8F9EA0019FA32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D68021F8F9EA0019FA32 /* ViewController.m */; };
+		B206D68421F8F9EA0019FA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B206D68221F8F9EA0019FA32 /* Main.storyboard */; };
+		B206D68621F8F9EB0019FA32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B206D68521F8F9EB0019FA32 /* Assets.xcassets */; };
+		B206D68921F8F9EB0019FA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B206D68721F8F9EB0019FA32 /* LaunchScreen.storyboard */; };
+		B206D68C21F8F9EB0019FA32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D68B21F8F9EB0019FA32 /* main.m */; };
+		B206D69621F8F9EB0019FA32 /* Insta_FIshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D69521F8F9EB0019FA32 /* Insta_FIshTests.m */; };
+		B206D6A121F8F9EB0019FA32 /* Insta_FIshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D6A021F8F9EB0019FA32 /* Insta_FIshUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B206D69221F8F9EB0019FA32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B206D67121F8F9EA0019FA32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B206D67821F8F9EA0019FA32;
+			remoteInfo = "Insta-FIsh";
+		};
+		B206D69D21F8F9EB0019FA32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B206D67121F8F9EA0019FA32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B206D67821F8F9EA0019FA32;
+			remoteInfo = "Insta-FIsh";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B206D67921F8F9EA0019FA32 /* Insta-FIsh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Insta-FIsh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B206D67C21F8F9EA0019FA32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B206D67D21F8F9EA0019FA32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B206D67F21F8F9EA0019FA32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B206D68021F8F9EA0019FA32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B206D68321F8F9EA0019FA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B206D68521F8F9EB0019FA32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B206D68821F8F9EB0019FA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B206D68A21F8F9EB0019FA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B206D68B21F8F9EB0019FA32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B206D69121F8F9EB0019FA32 /* Insta-FIshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Insta-FIshTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B206D69521F8F9EB0019FA32 /* Insta_FIshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Insta_FIshTests.m; sourceTree = "<group>"; };
+		B206D69721F8F9EB0019FA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B206D69C21F8F9EB0019FA32 /* Insta-FIshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Insta-FIshUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B206D6A021F8F9EB0019FA32 /* Insta_FIshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Insta_FIshUITests.m; sourceTree = "<group>"; };
+		B206D6A221F8F9EB0019FA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B206D67621F8F9EA0019FA32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B206D68E21F8F9EB0019FA32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B206D69921F8F9EB0019FA32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B206D67021F8F9EA0019FA32 = {
+			isa = PBXGroup;
+			children = (
+				B206D67B21F8F9EA0019FA32 /* Insta-FIsh */,
+				B206D69421F8F9EB0019FA32 /* Insta-FIshTests */,
+				B206D69F21F8F9EB0019FA32 /* Insta-FIshUITests */,
+				B206D67A21F8F9EA0019FA32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B206D67A21F8F9EA0019FA32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B206D67921F8F9EA0019FA32 /* Insta-FIsh.app */,
+				B206D69121F8F9EB0019FA32 /* Insta-FIshTests.xctest */,
+				B206D69C21F8F9EB0019FA32 /* Insta-FIshUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B206D67B21F8F9EA0019FA32 /* Insta-FIsh */ = {
+			isa = PBXGroup;
+			children = (
+				B206D67C21F8F9EA0019FA32 /* AppDelegate.h */,
+				B206D67D21F8F9EA0019FA32 /* AppDelegate.m */,
+				B206D67F21F8F9EA0019FA32 /* ViewController.h */,
+				B206D68021F8F9EA0019FA32 /* ViewController.m */,
+				B206D68221F8F9EA0019FA32 /* Main.storyboard */,
+				B206D68521F8F9EB0019FA32 /* Assets.xcassets */,
+				B206D68721F8F9EB0019FA32 /* LaunchScreen.storyboard */,
+				B206D68A21F8F9EB0019FA32 /* Info.plist */,
+				B206D68B21F8F9EB0019FA32 /* main.m */,
+			);
+			path = "Insta-FIsh";
+			sourceTree = "<group>";
+		};
+		B206D69421F8F9EB0019FA32 /* Insta-FIshTests */ = {
+			isa = PBXGroup;
+			children = (
+				B206D69521F8F9EB0019FA32 /* Insta_FIshTests.m */,
+				B206D69721F8F9EB0019FA32 /* Info.plist */,
+			);
+			path = "Insta-FIshTests";
+			sourceTree = "<group>";
+		};
+		B206D69F21F8F9EB0019FA32 /* Insta-FIshUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B206D6A021F8F9EB0019FA32 /* Insta_FIshUITests.m */,
+				B206D6A221F8F9EB0019FA32 /* Info.plist */,
+			);
+			path = "Insta-FIshUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B206D67821F8F9EA0019FA32 /* Insta-FIsh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B206D6A521F8F9EB0019FA32 /* Build configuration list for PBXNativeTarget "Insta-FIsh" */;
+			buildPhases = (
+				B206D67521F8F9EA0019FA32 /* Sources */,
+				B206D67621F8F9EA0019FA32 /* Frameworks */,
+				B206D67721F8F9EA0019FA32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Insta-FIsh";
+			productName = "Insta-FIsh";
+			productReference = B206D67921F8F9EA0019FA32 /* Insta-FIsh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B206D69021F8F9EB0019FA32 /* Insta-FIshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B206D6A821F8F9EB0019FA32 /* Build configuration list for PBXNativeTarget "Insta-FIshTests" */;
+			buildPhases = (
+				B206D68D21F8F9EB0019FA32 /* Sources */,
+				B206D68E21F8F9EB0019FA32 /* Frameworks */,
+				B206D68F21F8F9EB0019FA32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B206D69321F8F9EB0019FA32 /* PBXTargetDependency */,
+			);
+			name = "Insta-FIshTests";
+			productName = "Insta-FIshTests";
+			productReference = B206D69121F8F9EB0019FA32 /* Insta-FIshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B206D69B21F8F9EB0019FA32 /* Insta-FIshUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B206D6AB21F8F9EB0019FA32 /* Build configuration list for PBXNativeTarget "Insta-FIshUITests" */;
+			buildPhases = (
+				B206D69821F8F9EB0019FA32 /* Sources */,
+				B206D69921F8F9EB0019FA32 /* Frameworks */,
+				B206D69A21F8F9EB0019FA32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B206D69E21F8F9EB0019FA32 /* PBXTargetDependency */,
+			);
+			name = "Insta-FIshUITests";
+			productName = "Insta-FIshUITests";
+			productReference = B206D69C21F8F9EB0019FA32 /* Insta-FIshUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B206D67121F8F9EA0019FA32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jenny Chang";
+				TargetAttributes = {
+					B206D67821F8F9EA0019FA32 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B206D69021F8F9EB0019FA32 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B206D67821F8F9EA0019FA32;
+					};
+					B206D69B21F8F9EB0019FA32 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B206D67821F8F9EA0019FA32;
+					};
+				};
+			};
+			buildConfigurationList = B206D67421F8F9EA0019FA32 /* Build configuration list for PBXProject "Insta-FIsh" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B206D67021F8F9EA0019FA32;
+			productRefGroup = B206D67A21F8F9EA0019FA32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B206D67821F8F9EA0019FA32 /* Insta-FIsh */,
+				B206D69021F8F9EB0019FA32 /* Insta-FIshTests */,
+				B206D69B21F8F9EB0019FA32 /* Insta-FIshUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B206D67721F8F9EA0019FA32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B206D68921F8F9EB0019FA32 /* LaunchScreen.storyboard in Resources */,
+				B206D68621F8F9EB0019FA32 /* Assets.xcassets in Resources */,
+				B206D68421F8F9EA0019FA32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B206D68F21F8F9EB0019FA32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B206D69A21F8F9EB0019FA32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B206D67521F8F9EA0019FA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B206D68121F8F9EA0019FA32 /* ViewController.m in Sources */,
+				B206D68C21F8F9EB0019FA32 /* main.m in Sources */,
+				B206D67E21F8F9EA0019FA32 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B206D68D21F8F9EB0019FA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B206D69621F8F9EB0019FA32 /* Insta_FIshTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B206D69821F8F9EB0019FA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B206D6A121F8F9EB0019FA32 /* Insta_FIshUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B206D69321F8F9EB0019FA32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B206D67821F8F9EA0019FA32 /* Insta-FIsh */;
+			targetProxy = B206D69221F8F9EB0019FA32 /* PBXContainerItemProxy */;
+		};
+		B206D69E21F8F9EB0019FA32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B206D67821F8F9EA0019FA32 /* Insta-FIsh */;
+			targetProxy = B206D69D21F8F9EB0019FA32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B206D68221F8F9EA0019FA32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B206D68321F8F9EA0019FA32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B206D68721F8F9EB0019FA32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B206D68821F8F9EB0019FA32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B206D6A321F8F9EB0019FA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B206D6A421F8F9EB0019FA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B206D6A621F8F9EB0019FA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Insta-FIsh/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jchang.Insta-FIsh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B206D6A721F8F9EB0019FA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Insta-FIsh/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jchang.Insta-FIsh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B206D6A921F8F9EB0019FA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Insta-FIshTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jchang.Insta-FIshTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Insta-FIsh.app/Insta-FIsh";
+			};
+			name = Debug;
+		};
+		B206D6AA21F8F9EB0019FA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Insta-FIshTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jchang.Insta-FIshTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Insta-FIsh.app/Insta-FIsh";
+			};
+			name = Release;
+		};
+		B206D6AC21F8F9EB0019FA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Insta-FIshUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jchang.Insta-FIshUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Insta-FIsh";
+			};
+			name = Debug;
+		};
+		B206D6AD21F8F9EB0019FA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Insta-FIshUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jchang.Insta-FIshUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Insta-FIsh";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B206D67421F8F9EA0019FA32 /* Build configuration list for PBXProject "Insta-FIsh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B206D6A321F8F9EB0019FA32 /* Debug */,
+				B206D6A421F8F9EB0019FA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B206D6A521F8F9EB0019FA32 /* Build configuration list for PBXNativeTarget "Insta-FIsh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B206D6A621F8F9EB0019FA32 /* Debug */,
+				B206D6A721F8F9EB0019FA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B206D6A821F8F9EB0019FA32 /* Build configuration list for PBXNativeTarget "Insta-FIshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B206D6A921F8F9EB0019FA32 /* Debug */,
+				B206D6AA21F8F9EB0019FA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B206D6AB21F8F9EB0019FA32 /* Build configuration list for PBXNativeTarget "Insta-FIshUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B206D6AC21F8F9EB0019FA32 /* Debug */,
+				B206D6AD21F8F9EB0019FA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B206D67121F8F9EA0019FA32 /* Project object */;
+}
