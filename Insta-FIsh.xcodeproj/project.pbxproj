@@ -15,6 +15,9 @@
 		B206D68C21F8F9EB0019FA32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D68B21F8F9EB0019FA32 /* main.m */; };
 		B206D69621F8F9EB0019FA32 /* Insta_FIshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D69521F8F9EB0019FA32 /* Insta_FIshTests.m */; };
 		B206D6A121F8F9EB0019FA32 /* Insta_FIshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D6A021F8F9EB0019FA32 /* Insta_FIshUITests.m */; };
+		B206D6B021F8FC570019FA32 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D6AF21F8FC570019FA32 /* MyCollectionViewCell.m */; };
+		B206D6B321F8FCDA0019FA32 /* MyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D6B221F8FCDA0019FA32 /* MyHeaderView.m */; };
+		B206D6B621F927E80019FA32 /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D6B521F927E80019FA32 /* Fish.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		B206D69C21F8F9EB0019FA32 /* Insta-FIshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Insta-FIshUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B206D6A021F8F9EB0019FA32 /* Insta_FIshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Insta_FIshUITests.m; sourceTree = "<group>"; };
 		B206D6A221F8F9EB0019FA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B206D6AE21F8FC570019FA32 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		B206D6AF21F8FC570019FA32 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		B206D6B121F8FCDA0019FA32 /* MyHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHeaderView.h; sourceTree = "<group>"; };
+		B206D6B221F8FCDA0019FA32 /* MyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyHeaderView.m; sourceTree = "<group>"; };
+		B206D6B421F927E80019FA32 /* Fish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
+		B206D6B521F927E80019FA32 /* Fish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,12 @@
 				B206D67F21F8F9EA0019FA32 /* ViewController.h */,
 				B206D68021F8F9EA0019FA32 /* ViewController.m */,
 				B206D68221F8F9EA0019FA32 /* Main.storyboard */,
+				B206D6B421F927E80019FA32 /* Fish.h */,
+				B206D6B521F927E80019FA32 /* Fish.m */,
+				B206D6B121F8FCDA0019FA32 /* MyHeaderView.h */,
+				B206D6B221F8FCDA0019FA32 /* MyHeaderView.m */,
+				B206D6AE21F8FC570019FA32 /* MyCollectionViewCell.h */,
+				B206D6AF21F8FC570019FA32 /* MyCollectionViewCell.m */,
 				B206D68521F8F9EB0019FA32 /* Assets.xcassets */,
 				B206D68721F8F9EB0019FA32 /* LaunchScreen.storyboard */,
 				B206D68A21F8F9EB0019FA32 /* Info.plist */,
@@ -264,7 +279,10 @@
 			files = (
 				B206D68121F8F9EA0019FA32 /* ViewController.m in Sources */,
 				B206D68C21F8F9EB0019FA32 /* main.m in Sources */,
+				B206D6B021F8FC570019FA32 /* MyCollectionViewCell.m in Sources */,
+				B206D6B621F927E80019FA32 /* Fish.m in Sources */,
 				B206D67E21F8F9EA0019FA32 /* AppDelegate.m in Sources */,
+				B206D6B321F8FCDA0019FA32 /* MyHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
