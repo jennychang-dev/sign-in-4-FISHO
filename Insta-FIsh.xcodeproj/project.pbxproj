@@ -18,6 +18,7 @@
 		B206D6B021F8FC570019FA32 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D6AF21F8FC570019FA32 /* MyCollectionViewCell.m */; };
 		B206D6B321F8FCDA0019FA32 /* MyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D6B221F8FCDA0019FA32 /* MyHeaderView.m */; };
 		B206D6B621F927E80019FA32 /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D6B521F927E80019FA32 /* Fish.m */; };
+		B206D6B921F943C30019FA32 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B206D6B821F943C30019FA32 /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		B206D6B221F8FCDA0019FA32 /* MyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyHeaderView.m; sourceTree = "<group>"; };
 		B206D6B421F927E80019FA32 /* Fish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
 		B206D6B521F927E80019FA32 /* Fish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
+		B206D6B721F943C30019FA32 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		B206D6B821F943C30019FA32 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				B206D67F21F8F9EA0019FA32 /* ViewController.h */,
 				B206D68021F8F9EA0019FA32 /* ViewController.m */,
 				B206D68221F8F9EA0019FA32 /* Main.storyboard */,
+				B206D6B721F943C30019FA32 /* SignUpViewController.h */,
+				B206D6B821F943C30019FA32 /* SignUpViewController.m */,
 				B206D6B421F927E80019FA32 /* Fish.h */,
 				B206D6B521F927E80019FA32 /* Fish.m */,
 				B206D6B121F8FCDA0019FA32 /* MyHeaderView.h */,
@@ -282,6 +287,7 @@
 				B206D6B021F8FC570019FA32 /* MyCollectionViewCell.m in Sources */,
 				B206D6B621F927E80019FA32 /* Fish.m in Sources */,
 				B206D67E21F8F9EA0019FA32 /* AppDelegate.m in Sources */,
+				B206D6B921F943C30019FA32 /* SignUpViewController.m in Sources */,
 				B206D6B321F8FCDA0019FA32 /* MyHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

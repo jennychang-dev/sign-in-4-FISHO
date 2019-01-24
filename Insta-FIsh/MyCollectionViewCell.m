@@ -10,4 +10,11 @@
 
 @implementation MyCollectionViewCell
 
+// reuse cells
+
+- (void)prepareForReuse {
+    self.fishImage.image = nil;
+    self.layer.borderWidth = 0;
+}
+
 @end

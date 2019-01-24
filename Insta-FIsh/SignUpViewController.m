@@ -8,25 +8,34 @@
 
 #import "SignUpViewController.h"
 
-@interface SignUpViewController ()
+@interface SignUpViewController () <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 @end
 
 @implementation SignUpViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.usernameTextField.delegate = self;
+    self.passwordTextField.delegate = self;
+
 }
 
-/*
-#pragma mark - Navigation
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if (textField == self.usernameTextField) {
+        self.usernameTextField.keyboardType = UIKeyboardTypeEmailAddress;
+        self.usernameTextField.autocapitalizationType = UITextAutocorrectionTypeNo;
+    } else {
+        self.passwordTextField.keyboardType = UIKeyboardTypeDefault;
+        self.passwordTextField.autocapitalizationType = UITextAutocorrectionTypeNo;
+        self.passwordTextField.secureTextEntry = YES;
+    }
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
 @end

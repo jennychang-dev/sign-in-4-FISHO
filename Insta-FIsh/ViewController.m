@@ -11,17 +11,19 @@
 #import "MyHeaderView.h"
 #import "Fish.h"
 
-@interface ViewController () <UICollectionViewDataSource>
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
 @property (strong, nonatomic) UICollectionViewFlowLayout *simpleLayout;
-@property (strong, nonatomic) UICollectionViewFlowLayout *complexLayout;
 @property MyHeaderView *headerView;
+@property MyCollectionViewCell *cell;
 @property Fish *fishItem;
 
-@property NSArray *fishArray;
-
+@property NSMutableArray *fishArray;
+@property NSMutableArray *removeCellArray;
+@property NSString *allowEdit;
+@property(nonatomic, readonly) NSArray<NSIndexPath *> *indexPathsForVisibleItems;
 
 @end
 
@@ -30,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.fishArray = @[
+    self.fishArray = [@[
                        [[Fish alloc] initWithImage:[UIImage imageNamed:@"fish1"]],
                        [[Fish alloc] initWithImage:[UIImage imageNamed:@"fish2"]],
                        [[Fish alloc] initWithImage:[UIImage imageNamed:@"fish3"]],
@@ -50,12 +52,15 @@
                        [[Fish alloc] initWithImage:[UIImage imageNamed:@"fish17"]],
                        [[Fish alloc] initWithImage:[UIImage imageNamed:@"fish18"]],
                        [[Fish alloc] initWithImage:[UIImage imageNamed:@"fish19"]],
-                       [[Fish alloc] initWithImage:[UIImage imageNamed:@"fish20"]],
+                       [[Fish alloc] initWithImage:[UIImage imageNamed:@"fish20"]]
                        
-                       ];
-                       
+                       ] mutableCopy];
+    
+    // initialise new array
+    self.removeCellArray = [[NSMutableArray alloc] init];
     
     self.myCollectionView.dataSource = self;
+    self.myCollectionView.delegate = self;
 
     // Create and set up all the properties of the layout object
     [self setUpSimpleLayout];
@@ -91,21 +96,22 @@
     return self.fishArray.count;
 }
 
+// when cells loads, we call the images
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView
                                    cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     NSString *cellId = @"myCell";
 
     // Ask collection view to give us a cell that we can use to populate our data
-    MyCollectionViewCell *cell = [self.myCollectionView dequeueReusableCellWithReuseIdentifier:cellId
+    self.cell = [self.myCollectionView dequeueReusableCellWithReuseIdentifier:cellId
                                 forIndexPath:indexPath];
     
     Fish *eachFish = self.fishArray[indexPath.row];
     
-    cell.fishImage.image = eachFish.image;
+    self.cell.fishImage.image = eachFish.image;
     
 
-    return cell;
+    return self.cell;
 }
 
 
@@ -119,6 +125,8 @@
                                                                                   forIndexPath:indexPath];
         headerView.profileName.text = @"👤 Jenny Chang";
         headerView.profilePic.image = [UIImage imageNamed:@"jc"];
+        headerView.profilePic.layer.borderWidth = 10;
+        headerView.profilePic.layer.borderColor = [[UIColor whiteColor] CGColor];
         headerView.profileCity.text = @"📍 Vancouver";
         headerView.profileBio.text = @"Hey check out my pics of fish below 🐡";
         headerView.tintColor = [UIColor whiteColor];
@@ -128,6 +136,60 @@
     else {
         return nil;
     }
+}
+
+// if edit button is tapped, allow selection of cells
+
+- (IBAction)editButtonTapped:(id)sender {
+    self.allowEdit = @"YES";
+}
+
+// only allow selected cells if edit button is tapped
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.allowEdit isEqualToString:@"YES"]) {
+        
+
+        
+        [self addSelectedItemsToMyArray:indexPath];
+        // refer to the cell I selected via this method below
+        
+        [collectionView cellForItemAtIndexPath:indexPath].layer.borderWidth = 8;
+        [collectionView cellForItemAtIndexPath:indexPath].layer.borderColor = [UIColor redColor].CGColor;
+
+    }
+    return YES;
+    
+}
+
+
+// add selected items to my array which I initialise in viewDidLoad
+-(void)addSelectedItemsToMyArray:(NSIndexPath *)indexPath
+{
+    NSLog(@"added item to index path %@",indexPath);
+    
+    // remember ya need to remove fish item not what you were trying to remove: fish index
+    
+    self.fishItem = self.fishArray[indexPath.row];
+    [self.removeCellArray addObject:self.fishItem];
+    
+    for (NSMutableArray *array in self.removeCellArray)
+        {
+            NSLog(@"print items in array %@",array);
+        }
+}
+
+- (IBAction)deleteButtonTapped:(UIBarButtonItem *)sender {
+    // for each cell in this collectin of cells
+
+    [self.fishArray removeObjectsInArray:self.removeCellArray];
+    // indexpathsforvisibleitems returns nsindexpath
+
+//    
+//    for (MyCollectionViewCell *cell in self.myCollectionView.indexPathsForVisibleItems) {
+//        cell.layer.borderWidth = 0;
+//    }
+    [self.myCollectionView reloadData];
 }
 
 
